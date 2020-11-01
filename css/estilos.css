@@ -1,0 +1,267 @@
+/*Fonts extraido de google*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/*COLORES*/
+:root {
+  --text-color: rgb(235, 235, 235);
+  --text-select-color: rgb(158, 12, 12);
+  --hamburger-color: rgb(0, 0, 0);
+  --background-color: rgb(0, 0, 0);
+  --menu-hamburguesa-color: rgb(34, 14, 14);
+  --menu-categorias-color: rgb(212, 212, 212);
+  --line-color-start:rgb(7, 16, 47);
+  --line-color-end: #306291;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background: var(--background-color);
+  text-transform: uppercase; /*masyucula*/
+  color: var(--text-color);
+}
+
+/*adaptacion a los contenedors*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 90%;
+  text-align: center;
+}
+
+/*********SLIDER
+*******************/
+.sliderContainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/*escondemos solo la segunda imagen*/
+div.show {
+  display: block;
+}
+/* slider y centrado */
+.mySlider {
+  display: none;
+  text-align: center;
+}
+/*imagen responsive */
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(148, 6, 6, 0.8);
+}
+
+.titleSlider {
+  color: #f2f2f2;
+  font-size: 1.8rem;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*********/
+/****MENU**/
+
+header {
+  padding: 30px 0;
+}
+
+
+/*todas las listas desordenada estaran sin viñetas y  horizontal */
+ul {
+  list-style-type: none; /* quito las viñetas*/
+  display: flex; /*vertical*/
+  flex-direction: column;
+  justify-content: space-between; /*Centro el texto de manera vertical y horizontal*/
+}
+
+/* drop box vertical NUESTROS LIBROS*/
+nav ul.drop {
+  flex-direction: column;
+  position: relative;
+  visibility: visible;
+  color: var(--menu-categorias-color);
+ 
+}
+
+/*sirve para menu y footer*/
+ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/****Estilos para menu hamburguesa*/
+/* tres rayas */
+a.icon  {
+  background-color: var(--hamburger-color);
+  color:white;
+  position: relative;
+  padding-left: 10px;
+}
+
+
+/*hover*/
+li:hover {
+  color: var(--text-select-color);
+}
+/*margen para todos los li */
+li{
+  margin: 12px 12px;
+}
+
+/**Lineas de sepacion*/
+
+header:after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    background: repeating-linear-gradient(30deg, var(--line-color-start), var(--line-color-end));
+}
+
+main:after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    background: repeating-linear-gradient(30deg, var(--line-color-end), var(--line-color-start));
+}
+
+/* oculto todo */
+.menuOff {
+  display: none;
+}
+
+/* muestro todo el menu * */
+.menuOn{
+  display: block;
+}
+
+/*logo*/
+.logo img{
+  display:block;
+  margin:auto;
+}
+
+/*****footer****/
+
+/*mi primer footer lo convierto en para que se muestre uno debajo de otro*/
+.footerP1P2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/*************************************
+*********TABLET desde 600 px
+***************************************/
+
+@media (min-width: 600px) {
+  
+  /****
+  *****menu****/
+  .topnav > ul:first-child {
+    display:flex;
+    flex-direction : row;
+    background-color: var(--background-color);
+  }
+  
+  nav ul.drop{
+    visibility: hidden;
+  }
+  
+  /*ocultamos la barra hamburguesa*/
+  a.icon {
+    visibility: hidden;
+  }
+
+  /*footer lo convierto en fila para tener una lista
+   a lado de otra */
+  .footerP1P2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footerP1, .footerP2{
+    width: 40%;
+  }
+
+
+}
+
+/*************************************
+**********DESKTOP desde 1024px
+**************************************/
+
+@media (min-width: 1024px) {
+  /*como estoy en escritorip
+  aumentaré en 1.2 todo el tamaño de las letras*/
+    *{
+      font-size: 1.2rem;
+
+    }
+
+
+}

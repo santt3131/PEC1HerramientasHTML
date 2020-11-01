@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Santi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/a85b3f0334.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="#" class="logo"><img alt="logo exterior" src="./img/others/logo.png"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myMenuResponsive()">
+                <i class="fa fa-bars  fa-2x"></i>
+            </a>
+        </div>
+        <nav class="topnav container">
+            <ul id="menu" class="menuOn">
+                <li><a href="#">HOME</a></li>
+                <li class="dropList">
+                    <a href="#" onclick="toggleBooks()">NUESTROS LIBROS</a>
+                    <ul class="drop">
+                        <li><a href="fantasia.html"> > FANTASÍA</a></li>
+                        <li><a href="comedia.html"> > COMEDIA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACTANOS</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="sliderContainer">
+            <div class="mySlider show fade">
+                <img src="./img/fantasia/1 La comunidad de los anillos.jpg">
+                <div class="titleSlider"> Trilogia Señor de los anillos </div>
+
+            </div>
+            <div class="mySlider fade">
+                <img src="./img/comedia/2 No culpes al karma.jpg">
+                <div class="titleSlider"> Las mejores comedias </div>
+            </div>
+            <a class="prev" onclick="showSlider(-1)"> &#10094; </a>
+            <a class="next" onclick="showSlider(2)"> &#10095; </a>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="footerP1P2">
+            <ul class="footerP1">
+                <li><a href="">Sobre nosotros</a></li>
+                <li><a href=""> Aviso legal</a></li>
+                <li><a href=""> Política de privacidad</a></li>
+            </ul>
+            <ul class="footerP2">
+                <li>
+                    <a href="">
+                        <span style="color:#3b5998">
+                            <i class="fab fa-facebook-square fa-5x"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span style="color:#00acee">
+                            <i class="fab fa-twitter fa-5x"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span style="color:#c4302b">
+                            <i class="fab fa-youtube fa-5x"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footerP3 ">
+            <p>©2020 Santiago Andrés Bruno Pérez
+                Trabajo realizado para la asignatura Herramientas HTML
+            </p>
+            <p>
+                Textos elaborados a partir de la información consultada
+                en <a href="https://www.casadellibro.com/">https://www.casadellibro.com/</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+<script src="./javascript/index.js"></script>
+
+</html>
