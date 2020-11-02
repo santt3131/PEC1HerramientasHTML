@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librería Santi</title>
+    <title>Categoria Fantasia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/a85b3f0334.js" crossorigin="anonymous"></script>
     <script src="./javascript/index.js"></script>
@@ -16,6 +16,7 @@
         <div>
             <a href="#" class="logo"><img alt="Logo Libros" src="./img/others/logo.png"></a>
             <a href="#" class="logo"><img alt="Logo Libreria Santi" src="./img/others/SantiBooks.png"></a>
+            <h1></h1>
             <a href="javascript:void(0);" class="icon" onclick="myMenuResponsive()">
                 <i class="fa fa-bars  fa-2x"></i>
             </a>
@@ -26,7 +27,7 @@
                 <li class="dropList">
                     <a href="#" onclick="toggleBooks()">NUESTROS LIBROS</a>
                     <ul class="drop">
-                        <li><a href="fantasia.html"> > FANTASÍA</a></li>
+                        <li><a href="fantasia.html" class="current"> > FANTASÍA</a></li>
                         <li><a href="comedia.html"> > COMEDIA</a></li>
                     </ul>
                 </li>
@@ -35,22 +36,46 @@
             </ul>
         </nav>
     </header>
-    <main id="main">
-        <div class="sliderContainer">
-            <div class="mySlider show fade">
-                <img alt="Portada - La comunidad de los anillos" title ="La comunidad de los anillos - Dos estatuas gigantes en un rio"
-                src="./img/fantasia/1LaComunidadDeLosAnillos.jpg" >
-                <div class="titleSlider"> Trilogia Señor de los anillos </div>
-
-            </div>
-            <div class="mySlider fade">
-                <img alt="Segunda Portada - No culpes al karma" title = "No culpes al karma- Dos flamencos mirandose"
-                src="./img/comedia/2NoCulpesAlKarma.jpg">
-                <div class="titleSlider"> Las mejores comedias </div>
-            </div>
-            <a class="prev" onclick="showSlider(-1)"> &#10094; </a>
-            <a class="next" onclick="showSlider(2)"> &#10095; </a>
-        </div>
+    <main>
+        <h1>CATEGORÍA FANTASIA</h1>
+        <ul class="categorias">
+            <li>
+                <a href="#">
+                <img alt="Libro- La comunidad de los anillos" title="La comunidad de los anillos - Dos estatuas gigantes en un rio"
+                src="./img/fantasia/1LaComunidadDeLosAnillos.jpg">
+                    <h2>COMUNIDAD DEL ANILLO </h2> 
+                </a>
+                <h3>J.R.R. TOLKIEN</h3>
+                <p>
+                    En la adormecida e idílica Comarca, un joven hobbit recibe un encargo: custodiar el Anillo Único y emprender el viaje para su destrucción en la Grieta del Destino. Acompañado por magos, hombres, elfos y enanos, atravesará la Tierra Media y se internará en las sombras de Mordor, perseguido siempre por las huestes de Sauron, el Señor Oscuro, dispuesto a recuperar su creación para establecer el dominio definitivo del Mal.
+                </p>
+                <a href="" class="more"> ver más </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img alt="Libro- Las dos torres" title="dos torres medievales gigantes "
+                    src="./img/fantasia/2LasDosTorres.jpg">
+                    <h2>LAS DOS TORRES</h2>
+                </a>
+                <h3>J.R.R. TOLKIEN</h3>
+                <p>
+                    La Compañía se ha disuelto y sus integrantes emprenden caminos separados. Frodo y Sam continúan solos su viaje a lo largo del río Anduin, perseguidos por la sombra misteriosa de un ser extraño que tambien ambiciona la posesión del Anillo. Mientras, hombres, elfos y enanos se preparan para la batalla final contra las fuerzas del Señor del Mal
+                </p>
+                <a href="" class="more"> ver más </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img alt="Libro- El retorno del rey"  title="Ojo de Sauro en una torre gigante"
+                    src="./img/fantasia/3ElRetornoDelRey.jpg">
+                    <h2>EL RETORNO DEL REY</h2>
+                </a>
+                <h3>J.R.R. TOLKIEN</h3>
+                <p>
+                    Los ejercitos del Señor Oscuro van extendiendo cada vez más su malefica sombra por la Tierra Media. Hombres, elfos y enanos unen sus fuerzas para presentar batalla a Sauron y sus huestes. Ajenos a estos preparativos, Frodo y Sam siguen adentrándose en el país de Mordor en su heroico viaje para destruir el Anillo de Poder en las Grietas del Destino.
+                </p>
+                <a href="" class="more"> ver más </a>
+            </li>
+        </ul>
     </main>
     <footer class="container">
         <div class="footerP1P2">
@@ -96,4 +121,5 @@
     </footer>
 
 </body>
+
 </html>
