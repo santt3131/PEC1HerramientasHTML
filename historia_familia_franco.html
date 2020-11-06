@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La familia Franco S.A</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/a85b3f0334.js" crossorigin="anonymous"></script>
+    <script src="./javascript/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./index.html" class="logo"><img alt="Logo Libros" src="./img/others/logo.png"></a>
+            <a href="./index.html" class="logo"><img alt="Logo Libreria Santi" src="./img/others/SantiBooks.png"></a>
+            <h1></h1>
+            <a href="javascript:void(0);" class="icon" onclick="myMenuResponsive()">
+                <i class="fa fa-bars  fa-2x"></i>
+            </a>
+        </div>
+        <nav class="topnav container">
+            <ul id="menu" class="menuOn">
+                <li><a href="./index.html">HOME</a></li>
+                <li >
+                    <a href="#" onclick="toggleBooks()">NUESTROS LIBROS</a>
+                    <ul class="drop">
+                        <li><a href="feminismo.html" class="current"> > FEMINISMO</a></li>
+                        <li><a href="historia.html"> > HISTORIA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACTANOS</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h1>LA FAMILIA FRANCO S.A.</h1>
+            </header>
+            <div class="containerLibro">
+                <section class="libro">
+                    <div class="libroP1">
+                        <h2>La familia Franco S.A </h2>
+                        <img alt="Libro - La familia Franco S.A " title="Familia franquista"
+                            src="./img/historia/la_familia_francoSA.jpg">
+                    </div>
+
+                    <div class="libroP2">
+                        <div>
+                            <strong> 9.95 €</strong>
+                        </div>
+                        <div>
+                            <strong>Envio gratis a parti de 20€</strong>
+                        </div>
+                        <div>
+                            <strong>Recibelo mañana</strong> 20 de noviembre
+                        </div>
+                        <div>
+                            <button type="button"> Comprar </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="video">
+                    <h2>Pelicula:</h2>
+                    <figure>
+                        <div class="videoFluid">
+                            <iframe class="videoFluidItem" src="https://www.youtube.com/embed/WpzDMy_SmMU" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                                  gyroscope; picture-in-picture" allowfullscreen
+                                title="Presentación La familia franco"></iframe>
+                            <div>
+                                <a class="more" href="https://www.youtube.com/embed/WpzDMy_SmMU">Ver
+                                    el vídeo en Youtube</a>
+                            </div>
+                        </div>
+                        <figcaption lang="es">Presentación: La familia Franco S.A</figcaption>
+                    </figure>
+                </section>
+                <section class="resumen">
+                    <h2>Resumen</h2>
+                    <blockquote
+                        cite="https://www.traficantes.net/libros/la-familia-franco-sa-0">
+                        <p>
+                            La familia Franco S. A. es la última y más completa investigación sobre el
+                            entorno familiar del general Franco.La familia Franco S.A. es un trayecto 
+                            financiero-personal que abarca desde que se forjó la familia, a principios 
+                            del siglo XX, hasta la España democrática de 2019. Este libro de investigación
+                            relata con rigor el aspecto más desconocido de la historia del clan Franco: 
+                            los negocios secretos, el modo en que amasaron su fortuna partido del simple 
+                            sueldo del general, el holding empresarial forjado alrededor de El Pardo, 
+                            los oscuros manejos de los testaferros, los escándalos profesionales, 
+                            la caza furtiva . 
+                        </p>
+                        <p>
+                            En 2019, la saga familiar de quien fue el hombre más  poderoso de España ha 
+                            perdido su brillo social de antaño, pero ha adquirido una gran notoriedad política y 
+                            jurídica por su oposición a la exhumación de los restos de Franco del Valle de los Caídos.
+                            La muerte de Carmen Franco ha destapado el origen y los avatares de la fortuna familiar, 
+                            amasada en plena dictadura y consolidada en democracia.
+                        </p>
+                        <footer> Mariano Sánchez Soler, <cite>Resumen - La familia Franco S.A </cite> </footer>
+                    </blockquote>
+                </section>
+                <section class="autor">
+                    <h2>Autor(a):</h2>
+                    <blockquote
+                    cite="https://www.traficantes.net/libros/la-familia-franco-sa-0">
+                    <p>
+                        Sánchez Soler (Alicante, 1954) es escritor, periodista y profesor. Doctor por la Universidad 
+                        de Alicante, es Licenciado en Ciencias de la Información por la UCM. Ha ejercido el periodismo 
+                        desde 1979 y ha desarrollado una intensa labor como escritor con más de veinte libros. Su última
+                        novela, Nuestra propia sangre, obtuvo el premio Francisco García Pavón de Narrativa 2009.
+                    </p>
+                    <footer> Traficantes de sueños, <cite> Bibliografía de Mariano Sánchez Soler</cite> </footer>
+                    </blockquote>
+                </section>
+                <section class="ficha_tecnica">
+                    <div><strong>Nº de páginas: </strong> 490</div>
+                    <div><strong>Editorial: </strong> ROCA EDITORIAL</div>
+                    <div><strong>Idioma: </strong> CASTELLANO </div>
+                    <div><strong>Encuadernación: </strong> Tapa blanda</div>
+                    <div><strong>ISBN: </strong> 9788417821180 </div>
+                    <div><strong>Año de edición: </strong> 2020 </div>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer class="container">
+        <div class="footerP1P2">
+            <ul class="footerP1">
+                <li><a href="">Sobre nosotros</a></li>
+                <li><a href=""> Aviso legal</a></li>
+                <li><a href=""> Política de privacidad</a></li>
+            </ul>
+            <ul class="footerP2">
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <span style="color:#3b5998">
+                            <i class="fab fa-facebook-square fa-5x"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/">
+                        <span style="color:#00acee">
+                            <i class="fab fa-twitter fa-5x"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/">
+                        <span style="color:#c4302b">
+                            <i class="fab fa-youtube fa-5x"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footerP3 ">
+            <p>©2020 Santiago Andrés Bruno Pérez
+                Trabajo realizado para la asignatura Herramientas <abbr title="Hypertext Markup Language" lang="es">HTML</abbr> y
+                <abbr title="Cascading Style Sheets" lang="es">CSS</abbr> - <abbr title="Universidad Oberta de Catalunya " lang="es">UOC</abbr>
+            </p>
+            <p>
+                Textos elaborados a partir de la información consultada
+                en <a href="https://www.traficantes.net/editorial">https://www.traficantes.net/editorial</a>
+            </p>
+            <p>
+                Santi Books esta bajo la lincencia Creative Commons (CC-Share Alike):
+                <div><img src="./img/others/licencia_cc-share.png"> 
+                </div>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

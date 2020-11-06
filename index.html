@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,8 +14,8 @@
 <body>
     <header>
         <div>
-            <a href="#" class="logo"><img alt="Logo Libros" src="./img/others/logo.png"></a>
-            <a href="#" class="logo"><img alt="Logo Libreria Santi" src="./img/others/SantiBooks.png"></a>
+            <a href="./index.html" class="logo"><img alt="Logo Libros" src="./img/others/logo.png"></a>
+            <a href="./index.html" class="logo"><img alt="Logo Libreria Santi" src="./img/others/SantiBooks.png"></a>
             <a href="javascript:void(0);" class="icon" onclick="myMenuResponsive()">
                 <i class="fa fa-bars  fa-2x"></i>
             </a>
@@ -23,11 +23,11 @@
         <nav class="topnav container">
             <ul id="menu" class="menuOn">
                 <li><a href="./index.html">HOME</a></li>
-                <li class="dropList">
+                <li >
                     <a href="#" onclick="toggleBooks()">NUESTROS LIBROS</a>
                     <ul class="drop">
-                        <li><a href="fantasia.html"> > FANTASÍA</a></li>
-                        <li><a href="comedia.html"> > COMEDIA</a></li>
+                        <li><a href="feminismo.html"> > FEMINISMO</a></li>
+                        <li><a href="historia.html"> > HISTORIA</a></li>
                     </ul>
                 </li>
                 <li><a href="#">CONTACTANOS</a></li>
@@ -38,15 +38,19 @@
     <main id="main">
         <div class="sliderContainer">
             <div class="mySlider show fade">
-                <img alt="Portada - La comunidad de los anillos" title ="La comunidad de los anillos - Dos estatuas gigantes en un rio"
-                src="./img/fantasia/1LaComunidadDeLosAnillos.jpg" >
-                <div class="titleSlider"> Trilogia Señor de los anillos </div>
+                <a href="./feminismo_persepolis.html">
+                <img alt="Portada - Persépolis" title ="Niña islámica iraní"
+                src="./img/feminismo/persepolis.jpg" >
+                </a>
+                <div class="titleSlider"> Persépolis </div>
 
             </div>
             <div class="mySlider fade">
-                <img alt="Segunda Portada - No culpes al karma" title = "No culpes al karma- Dos flamencos mirandose"
-                src="./img/comedia/2NoCulpesAlKarma.jpg">
-                <div class="titleSlider"> Las mejores comedias </div>
+                <a href="./historia_familia_franco.html">
+                <img alt="Portada - La familia franco SA" title = "Familia franquista"
+                src="./img/historia/la_familia_francoSA.jpg">
+                </a>
+                <div class="titleSlider"> La familia franco SA </div>
             </div>
             <a class="prev" onclick="showSlider(-1)"> &#10094; </a>
             <a class="next" onclick="showSlider(2)"> &#10095; </a>
@@ -86,11 +90,17 @@
 
         <div class="footerP3 ">
             <p>©2020 Santiago Andrés Bruno Pérez
-                Trabajo realizado para la asignatura Herramientas <abbr title="Hypertext Markup Language" lang="en">HTML</abbr> y <abbr title="Cascading Style Sheets" lang="en">CSS</abbr>
+                Trabajo realizado para la asignatura Herramientas <abbr title="Hypertext Markup Language" lang="es">HTML</abbr> y
+                <abbr title="Cascading Style Sheets" lang="es">CSS</abbr> - <abbr title="Universidad Oberta de Catalunya " lang="es">UOC</abbr>
             </p>
             <p>
                 Textos elaborados a partir de la información consultada
-                en <a href="https://www.casadellibro.com/">https://www.casadellibro.com/</a>
+                en <a href="https://www.traficantes.net/editorial">https://www.traficantes.net/editorial</a>
+            </p>
+            <p>
+                Santi Books esta bajo la lincencia Creative Commons (CC-Share Alike):
+                <div><img src="./img/others/licencia_cc-share.png"> 
+                </div>
             </p>
         </div>
     </footer>
