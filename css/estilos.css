@@ -193,7 +193,7 @@ body > main:after {
 }
 
 /*cambio a boton por accesibilidad*/
-#nuestroLibros{
+#nuestroLibros, .prev ,.next{
   background-color: Transparent;
     background-repeat:no-repeat;
     font-size: inherit;
