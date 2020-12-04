@@ -10,7 +10,9 @@ function myMenuResponsive(){
     const menuList = document.getElementById("menu");
     if(menuList.className ==="menuOff" ){
         menuList.className = "menuOn";
-    }else{
+    }else if(menuList.className === "menuOn"){
+        menuList.className = "menuOff";
+    }else if(menuList.className === undefined ){
         menuList.className = "menuOff";
     }
 }
