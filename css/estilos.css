@@ -219,6 +219,20 @@ footer{
 .footerP3 a{
   color:green;
 }
+
+
+/*CLIP PATH*/
+.clip{
+  clip-path: polygon(71% 23%, 54% 46%, 77% 61%, 46% 98%, 47% 48%, 47% 8%);
+  width: 200;
+  height: 180px;
+}
+
+footer.container:before{
+  content: "\A";
+  white-space: pre;
+}
+
 /*****
 Página Categorías 
 *********/
