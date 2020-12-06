@@ -366,6 +366,11 @@ un bloque con padding top 62.45% para permitir ver el video
   nav ul.drop{
     visibility: hidden;
   }
+  
+  /*ocultamos la barra hamburguesa*/
+#icon {
+    visibility: hidden;
+  }
 
    /*justifico , margen en resumnen y autor*/
   blockquote p{
