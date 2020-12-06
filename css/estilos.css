@@ -140,9 +140,9 @@ ul a {
 
 /****Estilos para menu hamburguesa*/
 /* tres rayas */
-a.icon  {
+#icon  {
   background-color: var(--hamburger-color);
-  color:white;
+  border: 0;
   position: relative;
   padding-left: 10px;
 }
@@ -364,11 +364,6 @@ un bloque con padding top 62.45% para permitir ver el video
   }
 
   nav ul.drop{
-    visibility: hidden;
-  }
-  
-  /*ocultamos la barra hamburguesa*/
-  a.icon {
     visibility: hidden;
   }
 
