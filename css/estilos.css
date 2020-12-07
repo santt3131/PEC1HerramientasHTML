@@ -339,6 +339,12 @@ un bloque con padding top 62.45% para permitir ver el video
   padding-top: 62.25%;
 }
 
+ /*Ficha tecnica-mobile*/
+ .fichaP1P2 {
+  display: flex ;
+  flex-direction : column;
+}
+
 /*licencia CC*/
 .footerP3 p{
   font-size: 0.8em;
@@ -348,6 +354,7 @@ un bloque con padding top 62.45% para permitir ver el video
 .footerP3 img{
   max-width: 25%;
 }
+
 
 /*************************************
 *********TABLET desde 600 px
@@ -398,7 +405,16 @@ un bloque con padding top 62.45% para permitir ver el video
     grid-template-columns: repeat(auto-fit, 50%);
   }
 
-
+  /*Ficha tecnica-tablet*/
+  .fichaP1P2 {
+    display: flex ;
+    flex-direction : row;
+  }
+  
+  .fichaP1, .fichaP2 {
+    flex:1;
+  }
+  
   /********Detalle de Categoría*/
   /*como mi clase .libro es display:grid
   aqui asigno a libroP1 que empieze(grid-column-start) en 1
@@ -433,6 +449,18 @@ blockquote p{
   text-align: justify;
   margin: 0.5em;
 }
+
+
+/*Ficha tecnica-desktop*/
+.fichaP1P2 {
+    display: flex ;
+    flex-direction : row;
+}
+  
+.fichaP1, .fichaP2 {
+    flex:1;
+}
+  
 
 
 }

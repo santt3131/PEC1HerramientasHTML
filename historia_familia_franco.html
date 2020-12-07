@@ -42,8 +42,12 @@
                 <section class="libro">
                     <div class="libroP1">
                         <h2>La familia Franco S.A </h2>
-                        <img alt="Libro - La familia Franco S.A " title="Familia franquista"
-                            src="./img/historia/la_familia_francoSA.jpg">
+                        <img srcset="./img/historia/la_familia_francoSA-400.jpg 400w,
+                                     ./img/historia/la_familia_francoSA-552.jpg 552w"
+                            size= "(max-width: 600px) 400px, 
+                                   (min-width: 601px) 552px"
+                            src= "./img/historia/la_familia_francoSA-552.jpg"
+                            alt="Libro - La familia Franco S.A" >
                     </div>
                     <div class="libroP2">
                         <div>
@@ -59,21 +63,6 @@
                             <button type="button"> Comprar </button>
                         </div>
                     </div>
-                </section>
-                <section class="video">
-                    <h2>Vídeo:</h2>
-                    <figure>
-                        <div class="videoFluid">
-                            <iframe class="videoFluidItem" src="https://www.youtube.com/embed/WpzDMy_SmMU" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                                  gyroscope; picture-in-picture" allowfullscreen
-                                title="Presentación La familia franco"></iframe>
-                            <div>
-                                <a class="more" href="https://www.youtube.com/embed/WpzDMy_SmMU">Ver
-                                    el vídeo en Youtube</a>
-                            </div>
-                        </div>
-                        <figcaption lang="es">Presentación: La familia Franco S.A</figcaption>
-                    </figure>
                 </section>
                 <section class="resumen">
                     <h2>Resumen</h2>
@@ -100,6 +89,21 @@
                         <footer> Mariano Sánchez Soler, <cite>Resumen - La familia Franco S.A </cite> </footer>
                     </blockquote>
                 </section>
+                <section class="video">
+                    <h2>Vídeo:</h2>
+                    <figure>
+                        <div class="videoFluid">
+                            <iframe class="videoFluidItem" src="https://www.youtube.com/embed/WpzDMy_SmMU" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                                  gyroscope; picture-in-picture" allowfullscreen
+                                title="Presentación La familia franco"></iframe>
+                            <div>
+                                <a class="more" href="https://www.youtube.com/embed/WpzDMy_SmMU">Ver
+                                    el vídeo en Youtube</a>
+                            </div>
+                        </div>
+                        <figcaption lang="es">Presentación: La familia Franco S.A</figcaption>
+                    </figure>
+                </section>
                 <section class="autor">
                     <h2>Autor(a):</h2>
                     <blockquote
@@ -125,12 +129,18 @@
                 </section>
                 <section class="ficha_tecnica">
                     <h2>Ficha técnica</h2>
-                    <div><strong>Nº de páginas: </strong> 490</div>
-                    <div><strong>Editorial: </strong> ROCA EDITORIAL</div>
-                    <div><strong>Idioma: </strong> CASTELLANO </div>
-                    <div><strong>Encuadernación: </strong> Tapa blanda</div>
-                    <div><strong>ISBN: </strong> 9788417821180 </div>
-                    <div><strong>Año de edición: </strong> 2020 </div>
+                    <div class= "fichaP1P2">
+                        <div class="fichaP1">
+                            <div><strong>Nº de páginas: </strong> 490</div>
+                            <div><strong>Editorial: </strong> ROCA EDITORIAL</div>
+                            <div><strong>Idioma: </strong> CASTELLANO </div>
+                        </div>
+                        <div class="fichaP2">
+                            <div><strong>Encuadernación: </strong> Tapa blanda</div>
+                            <div><strong>ISBN: </strong> 9788417821180 </div>
+                            <div><strong>Año de edición: </strong> 2020 </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </article>
