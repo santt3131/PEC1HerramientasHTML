@@ -252,6 +252,38 @@ Página Categorías
 main h1 , .categorias  * {
   text-align: center;
 }
+/*ajustando imagen un poco más pequeña*/
+.categorias img {
+  width: 50vw;
+}
+
+/*lo convierto en flex-row*/
+.libroCategoria{
+  display: flex;
+  align-items: center;/*y*/
+}
+
+.libroCategoria div{
+  flex:1;
+}
+
+/*arreglo de categorias-mobile
+main = 18px and ul=18px */
+main h1{
+  font-size:1.5em; /*27px*/
+  font-weight: bold;
+}
+.titleBooks{
+  font-size: 1em;/*18*/
+}
+.author{
+  font-size: 0.6em; /*10.8px*/
+}
+.price{
+  font-size: 1.2em; /*21.6px*/
+  font-weight: bold;
+}
+
 
 .more{
   color: var(--text-more);
