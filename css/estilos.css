@@ -9,7 +9,7 @@
   --background-color: rgb(0, 0, 0);
   --menu-hamburguesa-color: rgb(34, 14, 14);
   --menu-categorias-color: rgb(212, 212, 212);
-  --categorias-box:rgba(172, 94, 94, 0.938);
+  --categorias-box:rgba(233, 195, 69, 0.938);
   --text-more:  rgb(127, 204, 150);
 }
 
@@ -165,7 +165,7 @@ body > header:after {
     width: 100%;
     height: 6px;
     position: absolute;
-    background-image: repeating-linear-gradient(30deg, rgb(7, 16, 47), #306291);
+    background-image: repeating-linear-gradient(30deg, rgba(66, 53, 18, 0.938), rgba(233, 195, 69, 0.938));
 }
 
 body > main:after {
@@ -173,7 +173,7 @@ body > main:after {
     width: 100%;
     height: 6px;
     position: absolute;
-    background: repeating-linear-gradient(30deg, #306291, rgb(7, 16, 47));
+    background: repeating-linear-gradient(30deg, rgba(233, 195, 69, 0.938),  rgba(66, 53, 18, 0.938));
 }
 
 /* oculto todo */
@@ -238,7 +238,7 @@ Página Categorías
 *********/
 /*Decoro mi caja de lista de libros*/
 .categorias li {
-  border: 8px inset;
+  border: 2px inset;
   border-color: var(--categorias-box);
   border-radius: 14px;
   padding: 10px;
@@ -253,18 +253,33 @@ main h1 , .categorias  * {
   text-align: center;
 }
 /*ajustando imagen un poco más pequeña*/
-.categorias img {
+.categorias img, .libroCategoriaDetalle2{
   width: 50vw;
 }
 
 /*lo convierto en flex-row*/
 .libroCategoria{
   display: flex;
-  align-items: center;/*y*/
+  justify-content: center;
 }
 
 .libroCategoria div{
   flex:1;
+}
+
+.libroCategoriaDetalle2{
+  display:flex;
+  flex-direction: column;
+}
+
+.libroCategoriaDetalle2 div{
+  flex:1;
+}
+
+/*agrego media longitud más con respecto a los flex
+ 'a ver mas' para que el botton se muestre al final*/
+.more{
+  flex-grow: 0.5;
 }
 
 /*arreglo de categorias-mobile
@@ -284,8 +299,8 @@ main h1{
   font-weight: bold;
 }
 
-
 .more{
+  font-size: 0.8em; /* 14.4px*/
   color: var(--text-more);
 }
 
@@ -294,7 +309,7 @@ Detalle de Categoría
 **********/
 
 .containerLibro  > section{
-  border: 8px inset;
+  border: 2px inset;
   border-color: var(--categorias-box);
   border-radius: 14px;
   padding:10px;
@@ -324,20 +339,6 @@ cuando sea mobile ocuparan en el 100% de la pantalla
 /*precio*/
 .libroP2 div:first-child{
   font-size: 3em;
-}
-
-.libroP2 button{
-	background:linear-gradient( #2dabf9 , #0688fa );
-  background-color:#2dabf9;
-  color: var(--text-color);
-  border-radius:3px;
-  padding:16px 29px;
-  font-size: 1rem;
-}
-
-.libroP2 button:hover{
-  background: #318aac;
-  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
 }
 
 .libroP2 div{
@@ -386,6 +387,27 @@ un bloque con padding top 62.45% para permitir ver el video
 
 .figures_libros_relacionados figure{
   flex:1;
+}
+/*boton transition*/
+.button_transition{
+  background: rgb(202, 19, 19);
+  color:  rgb(235, 235, 235);
+  border-radius:3px;
+  border: 0px;
+  cursor: pointer;
+  padding: 0.5em; /*9px*/
+  font-size: 1em; /* 18px */
+  transition: transform 0.5s ease-out,
+             background-color 0.5s ease-in-out,
+             color 1s ease-in-out,
+             box-shadow 1s ease-in-out;
+}
+
+.button_transition:hover{
+  transform: scale(1.1);
+  background: rgb(4, 128, 0);
+  color: rgb(235, 235, 235);
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
 }
 
 /*licencia CC*/
