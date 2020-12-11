@@ -95,12 +95,6 @@ img {
   text-align: center;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -109,6 +103,55 @@ img {
     opacity: 1;
   }
 }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes OpacityScale {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ScaleRotateOpacity {
+  0% {
+    opacity: 0.4;
+    transform: rotate(0deg);
+  }
+  40% {
+    opacity: 0.6;
+    transform: scale(1.1) rotate(10deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/*imagen de categoria*/
+.libroCategoriaDetalle1 img{
+  animation-duration: 0.5s;
+  animation-name: OpacityScale;
+}
+
+.libroCategoriaDetalle1 img:hover{
+  animation-duration: 1s;
+  animation-name: ScaleRotateOpacity;
+}
+
 /*********/
 /****MENU**/
 
@@ -224,7 +267,7 @@ footer{
 /*CLIP PATH*/
 .clip{
   clip-path: polygon(71% 23%, 54% 46%, 77% 61%, 46% 98%, 47% 48%, 47% 8%);
-  width: 200;
+  width: 280px;
   height: 180px;
 }
 
