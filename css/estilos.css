@@ -60,8 +60,8 @@ img {
   height: auto;
 }
 
-.prev,
-.next {
+#prev,
+#next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -75,13 +75,13 @@ img {
   border-radius: 0 3px 3px 0;
 }
 
-.next {
+#next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
-.next:hover {
+#prev:hover,
+#next:hover {
   background-color: rgba(148, 6, 6, 0.8);
 }
 
@@ -192,10 +192,16 @@ ul a {
 
 
 /*hover*/
-.container  li:hover, .more:hover, .current{
+.more:hover{
   color: var(--text-select-color);
-
 }
+
+.current, .container  li > a:hover , .container  li > a:focus ,
+#nuestroLibros:hover, #nuestroLibros:focus{
+  color: rgb(245, 242, 75);
+}
+
+
 /*margen para todos los li */
 li{
   margin: 12px 12px;
@@ -236,7 +242,7 @@ body > main:after {
 }
 
 /*cambio a boton por accesibilidad*/
-#nuestroLibros, .prev ,.next{
+#nuestroLibros, #prev ,#next{
   background-color: Transparent;
     background-repeat:no-repeat;
     font-size: inherit;
@@ -260,7 +266,7 @@ footer{
 }
 
 .footerP3 a{
-  color:green;
+  color: rgb(207, 205, 56);
 }
 
 

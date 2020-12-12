@@ -14,22 +14,25 @@
         <div>
             <a href="./index.html" class="logo"><img alt="Logo Libros" src="./img/others/logo.svg"></a>
             <a href="./index.html" class="logo"><img alt="Logo Libreria Santi" src="./img/others/santiBooks.svg"></a>
-            <button type="button" id="icon" >
+            <button type="button" id="icon" aria-label="Barra Hamburguesa" >
                 <img alt="barra hamburguesa" title = "barra hamburguesa" src="./img/others/bars.svg">  
             </button>
         </div>
         <nav class="topnav container">
             <ul id="menu" class="menuOff">
-                <li><a href="./index.html">HOME</a></li>
-                <li >
-                    <button type="button" id="nuestroLibros">NUESTROS LIBROS</button>
-                    <ul class="drop">
-                        <li><a href="feminismo.html"> > FEMINISMO</a></li>
-                        <li><a href="historia.html"> > HISTORIA</a></li>
+                <li role="none"><a role="menuitem" href="./index.html">HOME</a></li>
+                <li role="none">
+                    <button type="button" id="nuestroLibros" aria-labelledby="menu" 
+                            aria-haspopup="true" aria-controls="menuCategoria">
+                            NUESTROS LIBROS
+                    </button>
+                    <ul id="menuCategoria" class="drop">
+                        <li><a role="menuitem" href="feminismo.html"> > FEMINISMO</a></li>
+                        <li><a role="menuitem" href="historia.html"> > HISTORIA</a></li>
                     </ul>
                 </li>
-                <li><a href="">CONTACTANOS</a></li>
-                <li><a href="">SOBRE NOSOTROS</a></li>
+                <li role="none"><a role="menuitem" href="">CONTACTANOS</a></li>
+                <li role="none"><a role="menuitem" href="">SOBRE NOSOTROS</a></li>
             </ul>
         </nav>
     </header>
@@ -56,13 +59,13 @@
                 </a>
                 <div class="titleSlider"> La familia franco SA </div>
             </div>
-            <button class="prev" id="prev"> &#10094; </button>
-            <button class="next" id="next"> &#10095; </button>
+            <button id="prev" aria-hidden="true" > &#10094; </button>
+            <button id="next" aria-hidden="true" > &#10095; </button>
         </div>
     </main>
     <footer class="container">
         <div>
-          <img class="clip" alt="Imagen en forma de B de Books" src="./img/others/books_clip.jpg">
+          <img class="clip" alt="Imagen en form                 a de B de Books" src="./img/others/books_clip.jpg">
           <a href="./index.html" class="logo"><img alt="Logo Libreria Santi" src="./img/others/santiBooks.svg"></a>
         </div>
         <div class="footerP1P2">
@@ -74,19 +77,19 @@
             <ul class="footerP2">
                 <li>
                     <a href="https://www.facebook.com/">
-                        <img alt="Icono de facebook" title = "facebook"
+                        <img alt="Icono de facebook" aria-label="facebook"
                         src="./img/redes_sociales/facebook.svg">           
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/">
-                        <img alt="Icono de twitter" title = "twitter"
+                        <img alt="Icono de twitter" aria-label="twitter"
                         src="./img/redes_sociales/twitter.svg">  
                     </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/">
-                        <img alt="Icono de youtube" title = "youtube"
+                        <img alt="Icono de youtube" aria-label="youtube"
                         src="./img/redes_sociales/youtube.svg">  
                     </a>
                 </li>
