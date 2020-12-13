@@ -4,7 +4,79 @@ const el_icon= document.getElementById("icon");
 const el_libro= document.getElementById("nuestroLibros");
 const el_arrow_left= document.getElementById("prev");
 const el_arrow_right= document.getElementById("next");
+const playPauseBtn = document.querySelector('.playpause');
+const stopBtn = document.querySelector('.stop');
+const rwdBtn = document.querySelector('.rwd');
+const fwdBtn = document.querySelector('.fwd');
+const timeLabel = document.querySelector('.time');
+const player = document.querySelector('video');
+const controls = document.querySelector('.controls')
 
+if(player){
+    player.removeAttribute('controls');
+    controls.style.visibility = 'visible';
+}
+
+if(playPauseBtn){
+    playPauseBtn.onclick = function() {
+        if(player.paused) {
+        playPauseBtn.setAttribute('data-icon','u');
+        player.play();
+        } else {
+        playPauseBtn.setAttribute('data-icon','P');
+        player.pause();
+        }
+    };
+}
+
+if(stopBtn){
+    stopBtn.onclick = function() {
+        player.pause();
+        player.currentTime = 0;
+        playPauseBtn.setAttribute('data-icon','P');
+    };
+}
+
+if(rwdBtn){
+rwdBtn.onclick = function() {
+    player.currentTime -= 3;
+  };
+}
+
+if(fwdBtn){
+fwdBtn.onclick = function() {
+    player.currentTime += 3;
+    if(player.currentTime >= player.duration || player.paused) {
+      player.pause();
+      player.currentTime = 0;
+      playPauseBtn.setAttribute('data-icon','P');
+    }
+  };
+}
+
+if(player){
+    player.ontimeupdate = function() {
+        let minutes = Math.floor(player.currentTime / 60);
+        let seconds = Math.floor(player.currentTime - minutes * 60);
+        let minuteValue;
+        let secondValue;
+    
+        if (minutes<10) {
+        minuteValue = "0" + minutes;
+        } else {
+        minuteValue = minutes;
+        }
+    
+        if (seconds<10) {
+        secondValue = "0" + seconds;
+        } else {
+        secondValue = seconds;
+        }
+    
+        mediaTime = minuteValue + ":" + secondValue;
+        timeLabel.textContent = mediaTime;
+    };
+}
 
 function myMenuResponsive(){
     const menuList = document.getElementById("menu");

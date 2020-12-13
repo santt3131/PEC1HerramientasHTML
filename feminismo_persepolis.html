@@ -85,13 +85,20 @@
                 <section class="video">
                     <h2>Vídeo: </h2>
                     <figure>
-                        <div class="videoFluid">
-                            <iframe class="videoFluidItem" src="https://www.youtube.com/embed/vEDFNSSxlQE" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                                  gyroscope; picture-in-picture" allowfullscreen title="Película Persépolis"></iframe>
-                            <div>
-                                <a class="more" href="https://www.youtube.com/embed/vEDFNSSxlQE"> Ver
-                                    el vídeo en Youtube</a>
-                            </div>
+                        <div class="player">
+                            <video id="video" aria-hidden="true" controls>
+                                <source src="https://santibooks.000webhostapp.com/Trailer%20en%20castellano%20de%20Perse%CC%81polis.mp4" type="video/mp4">
+                                <p>Tu navegador no soporta video de HTML5.  
+                                    Haz click <a href="https://youtu.be/vEDFNSSxlQE"> aqui </a>para ver el video
+                                </p>
+                            </video>
+                            <div class="controls">
+                                <button class="playpause" data-icon="P" aria-label="Play"></button>
+                                <button class="stop" data-icon="S" aria-label="Parar"></button>
+                                <button class="rwd" data-icon="B" aria-label="Ir atras"></button>
+                                <button class="fwd"  data-icon="F" aria-label="Avanzar"></button>
+                                <div class="time" aria-label="Tiempo">00:00</div>
+                              </div>
                         </div>
                         <figcaption lang="es">Película - Persépolis</figcaption>
                     </figure>

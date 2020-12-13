@@ -394,33 +394,6 @@ cuando sea mobile ocuparan en el 100% de la pantalla
   padding-top: 1rem;/*16px porque la raiz no se ha modificado*/
 }
 
-/*video*/
-/*position relative- porque deseo que aparezca dentro del fujo normal del documento
-es decir moviendose pero conversando el espacio que ocupa el video*/
-.videoFluid{
-  position: relative;
-}
-/*Ahora con el iframe cambio a posicion absolute con top,botom,left 0 para que salga 
-del flujo normal pero conservando la position relative del padre(dentro del flujo normal)
-*/
-.videoFluidItem {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-/*Luego para se visualize correctamente, creo antes videoFluid
-un bloque con padding top 62.45% para permitir ver el video
-*/
-.videoFluid::before {
-  display: block;
-  content: "";
-  padding-top: 62.25%;
-}
-
  /*Ficha tecnica-mobile*/
  .fichaP1P2 {
   display: flex ;
@@ -474,8 +447,41 @@ un bloque con padding top 62.45% para permitir ver el video
   max-width: 25%;
 }
 
+/*video*/
 
 
+@font-face {
+  font-family: 'controles';
+  src: url('../fonts/heydings/controls.eot');
+  src: url('../fonts/heydings/controls.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/heydings/controls.woff') format('woff'),
+       url('../fonts/heydings/controls.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.controls button:before {
+ font-family: controles;
+ font-size: 24px;
+ position: relative;
+ content: attr(data-icon);
+ color: white;
+ text-shadow: 1px 1px 0px rgb(123, 197, 38);
+}
+
+.controls button {
+  border: none;
+  color:white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.controls button:hover::before,
+.controls button:focus::before {
+  font-family: controles;
+  content: attr(data-icon);
+  color: yellow;
+}
 
 /*************************************
 *********TABLET desde 600 px

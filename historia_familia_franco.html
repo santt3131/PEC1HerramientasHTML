@@ -94,14 +94,20 @@
                 <section class="video">
                     <h2>Vídeo:</h2>
                     <figure>
-                        <div class="videoFluid">
-                            <iframe class="videoFluidItem" src="https://www.youtube.com/embed/WpzDMy_SmMU" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                                  gyroscope; picture-in-picture" allowfullscreen
-                                title="Presentación La familia franco"></iframe>
-                            <div>
-                                <a class="more" href="https://www.youtube.com/embed/WpzDMy_SmMU">Ver
-                                    el vídeo en Youtube</a>
-                            </div>
+                        <div class="player" >
+                              <video id="video" aria-hidden="true"  controls>
+                                <source src="https://santibooks.000webhostapp.com/Presentacio%CC%81n-La%20familia%20Franco.mp4" type="video/mp4">
+                                <p>Tu navegador no soporta video de HTML5.  
+                                   Haz click <a href="https://www.youtube.com/embed/WpzDMy_SmMU"> aqui </a>para ver el video
+                                </p>
+                              </video>
+                              <div class="controls">
+                                <button class="playpause" data-icon="P" aria-label="Play"></button>
+                                <button class="stop" data-icon="S" aria-label="Parar"></button>
+                                <button class="rwd" data-icon="B" aria-label="Ir atras"></button>
+                                <button class="fwd"  data-icon="F" aria-label="Avanzar"></button>
+                                <div class="time" aria-label="Tiempo">00:00</div>
+                              </div>
                         </div>
                         <figcaption lang="es">Presentación: La familia Franco S.A</figcaption>
                     </figure>
