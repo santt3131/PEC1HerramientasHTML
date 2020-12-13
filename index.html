@@ -24,19 +24,29 @@
         </div>
         <nav class="topnav container">
             <ul id="menu" class="menuOff">
-                <li role="none"><a role="menuitem" href="./index.html">HOME</a></li>
-                <li role="none">
+                <li>
+                    <a href="./index.html">HOME</a>
+                </li>
+                <li>
                     <button type="button" id="nuestroLibros" aria-labelledby="menu" 
                             aria-haspopup="true" aria-controls="menuCategoria">
                             NUESTROS LIBROS
                     </button>
-                    <ul id="menuCategoria" class="drop">
-                        <li><a role="menuitem" href="feminismo.html"> > FEMINISMO</a></li>
-                        <li><a role="menuitem" href="historia.html"> > HISTORIA</a></li>
+                    <ul id="menuCategoria" role="menu" aria-labelledby="nuestroLibros" class="drop">
+                        <li role="none">
+                            <a role="menuitem" href="feminismo.html"> > FEMINISMO</a>
+                        </li>
+                        <li role="none">
+                            <a role="menuitem" href="historia.html"> > HISTORIA</a>
+                        </li>
                     </ul>
                 </li>
-                <li role="none"><a role="menuitem" href="">CONTACTANOS</a></li>
-                <li role="none"><a role="menuitem" href="">SOBRE NOSOTROS</a></li>
+                <li>
+                    <a href="">CONTACTANOS</a>
+                </li>
+                <li>
+                    <a href="">SOBRE NOSOTROS</a>
+                </li>
             </ul>
         </nav>
     </header>
