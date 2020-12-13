@@ -483,6 +483,11 @@ cuando sea mobile ocuparan en el 100% de la pantalla
   color: yellow;
 }
 
+#video{
+  max-width: 90%;
+  height: auto;
+}
+
 /*************************************
 *********TABLET desde 600 px
 ***************************************/
@@ -619,5 +624,37 @@ blockquote p{
   padding: 0.8em; /*14.4px*/
   font-size: 1.5em; /* 27px */
 }
+
+
+.containerLibro {
+  display:grid;
+  grid-template-areas:
+    "libro libro  "
+    "resumen  video "
+    "autor   autor"
+    "ficha_tecnica   ficha_tecnica"
+    "libros_relacionados   libros_relacionados"
+    ;
+}
+
+.libro{
+  grid-area: libro;
+}
+.resumen{
+  grid-area : resumen;
+}
+.video{
+  grid-area: video;
+}
+.autor{
+  grid-area:autor;
+}
+.ficha_tecnica{
+  grid-area: ficha_tecnica;
+}
+.libros_relacionados{
+  grid-area: libros_relacionados;
+}
+
 
 }
