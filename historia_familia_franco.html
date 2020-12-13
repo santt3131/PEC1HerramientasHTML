@@ -24,25 +24,24 @@
             </button>
         </div>
         <nav class="topnav container">
-            <ul class="footerP2">
+            <ul id="menu" class="menuOff">
+                <li> <a href="./index.html">HOME</a> </li>
                 <li>
-                    <a href="https://www.facebook.com/" aria-label="facebook">
-                        <img alt="Icono de facebook" 
-                        src="./img/redes_sociales/facebook.svg">           
-                    </a>
+                    <button type="button" id="nuestroLibros" aria-labelledby="menu" 
+                            aria-haspopup="true" aria-controls="menuCategoria">
+                            NUESTROS LIBROS
+                    </button>
+                    <ul id="menuCategoria" role="menu" aria-labelledby="nuestroLibros" class="drop">
+                        <li role="none">
+                            <a role="menuitem" href="feminismo.html"> > FEMINISMO</a>
+                        </li>
+                        <li role="none">
+                            <a role="menuitem" href="historia.html"> > HISTORIA</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="https://twitter.com/" aria-label="twitter">
-                        <img alt="Icono de twitter"
-                        src="./img/redes_sociales/twitter.svg" >  
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/"  aria-label="twitter" >
-                        <img alt="Icono de youtube"
-                        src="./img/redes_sociales/youtube.svg" >  
-                    </a>
-                </li>
+                <li><a href="">CONTACTANOS</a></li>
+                <li><a href="">SOBRE NOSOTROS</a></li>
             </ul>
         </nav>
     </header>
