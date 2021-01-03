@@ -270,8 +270,8 @@ footer{
 /*CLIP PATH*/
 .clip{
   clip-path: polygon(71% 23%, 54% 46%, 77% 61%, 46% 98%, 47% 48%, 47% 8%);
-  width: 280px;
-  height: 180px;
+  width: 200px;
+  height: 129px;
 }
 
 footer.container:before{
@@ -565,6 +565,14 @@ cuando sea mobile ocuparan en el 100% de la pantalla
   font-size: 1.4em; /* 25.2px */
 }
 
+
+/*CLIP PATH*/
+.clip{
+  clip-path: polygon(71% 23%, 54% 46%, 77% 61%, 46% 98%, 47% 48%, 47% 8%);
+  width: 280px;
+  height: 180px;
+}
+
 }
 
 /*************************************
@@ -653,5 +661,12 @@ blockquote p{
   grid-area: libros_relacionados;
 }
 
+
+/*CLIP PATH*/
+.clip{
+  clip-path: polygon(71% 23%, 54% 46%, 77% 61%, 46% 98%, 47% 48%, 47% 8%);
+  width: 280px;
+  height: 180px;
+}
 
 }
